@@ -1,0 +1,136 @@
+
+#header {
+    width: auto;
+    height: 110px;
+    background-color: coral;
+    & #SiteName{
+        font-size: 200%;
+        font-style: oblique;
+        font-family: cursive;
+        margin-top: 20px;
+        margin-left: 10%;
+        color: rgb(139, 6, 139);
+        text-shadow: white .5px .5px;
+    }
+
+    & #menuBar{
+        margin-right: 10%;
+        & .menuItem{
+            float: right;
+            margin-right: 20px;
+            margin-top: 40px;    
+        }
+
+        & .menuItem a{
+            color: rgba(34, 43, 3, 0.726);
+            text-decoration: none;
+        }
+    }
+}
+
+#mainBody{
+    width: auto;
+    height: auto;
+    margin: 20px;
+    width: 80%;
+    padding: 20px;
+    height: 100vh;
+    background-color: rgb(228, 101, 233) ;
+}
+
+table{
+    width: 50%;
+    padding: auto;
+    margin: 20px;
+    
+    & thead th{
+        background-color: rgba(104, 9, 104, 0.945);
+        color: rgb(248, 244, 244);
+        padding: 2%;
+    }
+    
+    & tbody tr{
+        text-align: center;
+    }
+}
+
+
+
+#BookListBody{
+     
+    width: auto;
+    height: auto;
+    background-color: rgb(4, 167, 158);
+    margin: 10px;
+
+    & #BLBtn2{
+        padding: 10px;
+        margin: 10px;
+        width: 40%;
+        height: 50px;
+        //border-radius: 50%;
+        background-color: rgb(139, 6, 139);
+        color: floralwhite;
+        font-family: cursive;
+        font-size: medium;
+
+    
+        &:hover{
+
+            background-color: #5a084f;
+            //color: rgb(109, 233, 227);
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            width: 41%;
+            height: 51px;
+            //border-radius: 50%;
+            font-family: cursive;
+            font-size: larger;
+            text-shadow: rgb(40, 143, 138) 2px 2px;
+        }
+    }
+}
+
+.delPertBtn{
+    border-radius: 50%;
+    //border: rgb(10, 236, 150);
+    background-color: #810671;
+    color: white;
+    font-family: cursive;
+
+    &:hover{
+        border-radius: 50%;
+    background-color: white;
+    color: #810671;
+    font-family: cursive;
+    box-shadow:  #810671 2px 2px;
+    }
+}
+
+
+
+
+#headerDup{
+    width: 100%;
+}
+
+body{
+    background-color: rgb(139, 6, 139);
+}
+.Heading{
+    color: rgb(244, 248, 247);
+    font-family: cursive;
+    margin-top: 50px;
+    font-size: larger;
+    
+}
+.addBookItems{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: auto;
+    width: 35%;
+    height: 4%;
+    border: solid rgb(83, 240, 52) 1px;
+    border-radius: 30%;
+}

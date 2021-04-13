@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Book Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="SiteName"> Book Management System </div>
+        <div id="menuBar">
+            <div class="menuItem"> <input type="button" id="BLBtn" value="Book List" onclick="bm.BookListDisplay()"> </div>
+            <div class="menuItem"> <input type="button" id="ABBtn" value="Add Book" onclick="bm.AddBookBody()"> </div>
+            <div class="menuItem"> <input type="button" id="SBBtn" value="Search Book" onclick="bm.SearchBookBody()"> </div>
+        </div>
+    </div>
+
+
+    <div id="BookSearchBody">
+        <center>
+            <form>
+                <br>
+                Search By : <select name="select" id="select">
+                    <option value="SearchByID">Search By Book ID</option>
+                    <option value="SearchByName">Search By Book Name</option>
+                    <option value="SearchByAuthor">Search By Book Author</option>
+                    <option value="SearchByRating">Search By Book Rating</option>
+                </select><br>
+
+                <input type="text" id="searching" placeholder="Enter here for searching...">
+                <button type="button" id="searchBooks" onclick="bm.searchBooks()">Search</button>
+                <br>
+            </form>
+
+            <div id="mainBody" align="center">
+                <div id="table">
+
+                    <table align="center">
+                        <thead>
+                            <th> ID </th>
+                            <th> Book Name </th>
+                            <th> Author's Name </th>
+                            <th> Price </th>
+                            <th> Rating </th>
+                        </thead>
+                        <tbody id="searchTBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <div id="BookListBody">
+        <center>
+            <div class="Heading">Book List :</div> <br>
+            <div id="BLtable" align="center">
+
+                <table align="center">
+                    <thead>
+                        <th> ID </th>
+                        <th> Book Name </th>
+                        <th> Author's Name </th>
+                        <th> Price </th>
+                        <th> Rating </th>
+                    </thead>
+                    <tbody id="BlTbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </center>
+    </div>
+
+
+    <div id="addBookBody">
+        <center>
+        <form id="addBookForm">
+            <div class="Heading">Add Book : </div><br>
+            <input type="text" id="newBookId" class="addBookItems" placeholder="Enter Book ID here..."><br>
+            <input type="text" id="newBookName" class="addBookItems" placeholder="Enter Book Name here..."><br>
+            <input type="text" id="newBookAuthor" class="addBookItems" placeholder="Enter Book Author here..."><br>
+            <input type="text" id="newBookPrice" class="addBookItems" placeholder="Enter Book Price here..."><br>
+            <input type="text" id="newBookRating" class="addBookItems" placeholder="Enter Book Rating here..."><br>
+
+            <input type="button" value="Add Book" onclick="bm.AddBook()">
+        </form>
+    </center>
+
+    </div>
+
+    <div id="footer"></div>
+    <script src="../dist/main.js"></script>
+    <!-- <script src="../public/index.js"></script> -->
+</body>
+
+</html>

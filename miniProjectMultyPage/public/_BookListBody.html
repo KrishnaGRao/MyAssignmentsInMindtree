@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book_List_Body</title>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="SiteName"> Book Management System </div>
+        <div id="menuBar">
+            <div class="menuItem"> <a href="./_BookListBody.html"><input type="button" id="BLBtn" value="Book List" onclick="bm.BookListDisplay()"> </a></div>
+            <div class="menuItem"> <a href="./_AddBookBody.html"><input type="button" id="ABBtn" value="Add Book" onclick="bm.AddBookBody()"> </a></div>
+            <div class="menuItem"> <a href="./_BookSearchBody.html"><input type="button" id="SBBtn" value="Search Book" onclick="bm.SearchBookBody()"></a> </div>
+        </div>
+    </div>
+
+
+    <div id="BookListBody">
+        <center>
+            <input type="button" id="BLBtn2" value="Display All Books" onclick="bm.BookListDisplay()">
+            <div class="Heading">Book List </div> <br>
+            <div id="BLtable" align="center">
+    
+                <table align="center">
+                    <thead>
+                        <th> ID </th>
+                        <th> Book Name </th>
+                        <th> Author's Name </th>
+                        <th> Price </th>
+                        <th> Rating </th>
+                        <th> Action </th>
+                    </thead>
+                    <tbody id="BlTbody">
+    
+                    </tbody>
+                </table>
+            </div>
+        </center>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+
+</body>
+</html>

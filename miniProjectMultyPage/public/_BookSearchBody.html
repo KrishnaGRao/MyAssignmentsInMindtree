@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book_Search_Body</title>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="SiteName"> Book Management System </div>
+        <div id="menuBar">
+            <div class="menuItem"> <a href="./_BookListBody.html"><input type="button" id="BLBtn" value="Book List" onclick="bm.BookListDisplay()"> </a></div>
+            <div class="menuItem"> <a href="./_AddBookBody.html"><input type="button" id="ABBtn" value="Add Book" onclick="bm.AddBookBody()"> </a></div>
+            <div class="menuItem"> <a href="./_BookSearchBody.html"><input type="button" id="SBBtn" value="Search Book" onclick="bm.SearchBookBody()"></a> </div>
+        </div>
+    </div>
+
+
+    <div id="BookSearchBody">
+        <center>
+            <form>
+                <br>
+                Search By : <select name="select" id="select">
+                    <option value="SearchByID">Search By Book ID</option>
+                    <option value="SearchByName">Search By Book Name</option>
+                    <option value="SearchByAuthor">Search By Book Author</option>
+                    <option value="SearchByRating">Search By Book Rating</option>
+                </select><br>
+
+                <input type="text" id="searching" placeholder="Enter here for searching...">
+                <button type="button" id="searchBooks" onclick="bm.searchBooks()">Search</button>
+                <br>
+            </form>
+
+            <div id="mainBody" align="center">
+                <div id="table">
+
+                    <table align="center">
+                        <thead>
+                            <th> ID </th>
+                            <th> Book Name </th>
+                            <th> Author's Name </th>
+                            <th> Price </th>
+                            <th> Rating </th>
+                        </thead>
+                        <tbody id="searchTBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </center>
+    </div>
+    
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

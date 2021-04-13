@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add_Book_Body</title>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="SiteName"> Book Management System </div>
+        <div id="menuBar">
+            <div class="menuItem"> <a href="./_BookListBody.html"><input type="button" id="BLBtn" value="Book List" onclick="bm.BookListDisplay()"> </a></div>
+            <div class="menuItem"> <a href="./_AddBookBody.html"><input type="button" id="ABBtn" value="Add Book" onclick="bm.AddBookBody()"> </a></div>
+            <div class="menuItem"> <a href="./_BookSearchBody.html"><input type="button" id="SBBtn" value="Search Book" onclick="bm.SearchBookBody()"></a> </div>
+        </div>
+    </div>
+
+
+    <div id="addBookBody">
+        <center>
+        <form id="addBookForm">
+            <div class="Heading">Add Book : </div><br>
+            <input type="text" id="newBookId" class="addBookItems" placeholder="Enter Book ID here..."><br>
+            <input type="text" id="newBookName" class="addBookItems" placeholder="Enter Book Name here..."><br>
+            <input type="text" id="newBookAuthor" class="addBookItems" placeholder="Enter Book Author here..."><br>
+            <input type="text" id="newBookPrice" class="addBookItems" placeholder="Enter Book Price here..."><br>
+            <input type="text" id="newBookRating" class="addBookItems" placeholder="Enter Book Rating here..."><br>
+
+            <input type="button" value="Add Book" onclick="bm.AddBook()">
+        </form>
+    </center>
+
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+
+</body>
+</html>

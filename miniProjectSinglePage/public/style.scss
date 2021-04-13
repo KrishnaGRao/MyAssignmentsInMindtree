@@ -1,0 +1,95 @@
+
+#header {
+    width: auto;
+    height: 110px;
+    background-color: coral;
+    & #SiteName{
+        font-size: 200%;
+        font-style: oblique;
+        font-family: cursive;
+        margin-top: 20px;
+        margin-left: 10%;
+        color: rgb(139, 6, 139);
+    }
+
+    & #menuBar{
+        margin-right: 10%;
+        & .menuItem{
+            float: right;
+            margin-right: 20px;
+            margin-top: 40px;    
+        }
+
+        & .menuItem a{
+            color: rgba(34, 43, 3, 0.726);
+            text-decoration: none;
+        }
+    }
+}
+
+#mainBody{
+    width: auto;
+    height: auto;
+    margin: 20px;
+    width: 80%;
+    padding: 20px;
+    height: 100vh;
+    background-color: rgb(228, 101, 233) ;
+}
+
+table{
+    width: 50%;
+    padding: auto;
+    margin: 20px;
+    
+    & thead th{
+        background-color: rgba(104, 9, 104, 0.945);
+        color: rgb(248, 244, 244);
+        padding: 2%;
+    }
+    
+    & tbody tr{
+        text-align: center;
+    }
+}
+
+#addBookBody{
+    display: none; 
+}
+
+#BookListBody{
+    display: inline; 
+    width: auto;
+    height: max-content;
+    background-color: rgb(4, 167, 158);
+    margin: 10px;
+}
+
+#BookSearchBody{
+    display: none;
+}
+
+
+#headerDup{
+    width: 100%;
+}
+
+body{
+    background-color: rgb(139, 6, 139);
+}
+.Heading{
+    color: rgb(244, 248, 247);
+    font-family: cursive;
+    margin-top: 50px;
+    font-size: larger;
+    
+}
+.addBookItems{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: auto;
+    width: 35%;
+    height: 4%;
+    border: solid rgb(83, 240, 52) 1px;
+    border-radius: 30%;
+}
