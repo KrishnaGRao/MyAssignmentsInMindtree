@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Book</title>
+</head>
+
+<body>
+    <h1>Search Book</h1><br><br>
+    Search By : <select id="searchBy">
+        <option value="id">ID of the book</option>
+        <option value="name">Title of book</option>
+        <option value="author">Author of Book</option>
+        <option value="rating">Rating of Book</option>
+      </select>
+      <br>
+      <input type="text" id="searchBox">
+      <br><br>
+      <button id="submitForSearchBtn" onclick="searchBookBy(event)">Click Here for Search</button>
+      <br><br>
+      <table align="center" >
+        <thead>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Rating</th>
+            <th>Price</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</body>
+
+</html>
