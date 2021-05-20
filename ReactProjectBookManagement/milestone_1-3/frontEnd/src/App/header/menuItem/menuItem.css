@@ -1,0 +1,10 @@
+a {
+    margin-left: 20px;
+    color: white;
+    /* background-color:rgb(26, 44, 21); */
+    /* border: greenyellow; */
+    border-radius: 25%;
+    /* border-start-end-radius: 100ch; */
+    text-decoration: none;
+    padding: 5px;
+}

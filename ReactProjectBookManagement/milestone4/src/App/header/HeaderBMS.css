@@ -1,0 +1,13 @@
+.header{
+    width: auto;
+    height: 150px;
+    /* background-color: rgb(3, 102, 56); */
+    background: linear-gradient(to top,  rgba(17, 1, 1, 0.5), rgba(255, 0, 234, 0.5))
+
+}
+
+h1{
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 15px;
+}
